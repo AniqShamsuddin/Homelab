@@ -1,0 +1,16 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Pi-hole runtime data and backups
+pihole/etc-pihole/
+*teleporter*
+*.tar.gz
+*.zip
+
+# Real netplan config (contains Wi-Fi password)
+01-netcfg.yaml
+
+# macOS
+.DS_Store

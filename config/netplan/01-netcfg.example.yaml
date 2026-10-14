@@ -1,0 +1,15 @@
+# /etc/netplan/01-netcfg.yaml  (chmod 600)
+# Example only. Replace the SSID and password with your own and never commit real values.
+network:
+  version: 2
+  ethernets:
+    wired:
+      match:
+        name: "e*"        # any wired interface: USB Ethernet or iPhone tethering
+      dhcp4: true
+  wifis:
+    wlp3s0:
+      dhcp4: true
+      access-points:
+        "YOUR_WIFI_NAME":
+          password: "YOUR_WIFI_PASSWORD"
